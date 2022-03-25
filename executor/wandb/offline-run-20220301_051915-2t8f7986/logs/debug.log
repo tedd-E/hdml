@@ -1,0 +1,18 @@
+2022-03-01 05:19:15,587 INFO    MainThread:4178 [wandb_setup.py:_flush():71] setting env: {}
+2022-03-01 05:19:15,587 INFO    MainThread:4178 [wandb_init.py:_log_setup():371] Logging user logs to /home/ersp2021/FedML-Server-XF/executor/wandb/offline-run-20220301_051915-2t8f7986/logs/debug.log
+2022-03-01 05:19:15,588 INFO    MainThread:4178 [wandb_init.py:_log_setup():372] Logging internal logs to /home/ersp2021/FedML-Server-XF/executor/wandb/offline-run-20220301_051915-2t8f7986/logs/debug-internal.log
+2022-03-01 05:19:15,590 INFO    MainThread:4178 [wandb_init.py:init():404] calling init triggers
+2022-03-01 05:19:15,590 INFO    MainThread:4178 [wandb_init.py:init():411] wandb.init called with sweep_config: {}
+config: {'model': 'nn', 'dataset': 'cifar10', 'result_dir': './result', 'partition_method': 'iid', 'partition_alpha': 0.5, 'partition_secondary': False, 'partition_label': 'uniform', 'client_num_in_total': 2, 'client_num_per_round': 2, 'data_size_per_client': 600, 'batch_size': 100, 'client_optimizer': 'sgd', 'lr': 0.01, 'momentum': 0.9, 'wd': 0.001, 'epochs': 5, 'comm_round': 100, 'is_mobile': 1, 'frequency_of_the_test': 1, 'gpu_server_num': 1, 'gpu_num_per_server': 4, 'ci': 0, 'is_preprocessed': True, 'grpc_ipconfig_path': '../executor/grpc_ipconfig.csv', 'backend': 'MQTT', 'mqtt_host': '127.0.0.1', 'mqtt_port': 1883, 'trial': 0}
+2022-03-01 05:19:15,591 INFO    MainThread:4178 [wandb_init.py:init():460] starting backend
+2022-03-01 05:19:15,592 INFO    MainThread:4178 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-03-01 05:19:15,656 INFO    MainThread:4178 [backend.py:ensure_launched():216] starting backend process...
+2022-03-01 05:19:15,681 INFO    MainThread:4178 [backend.py:ensure_launched():222] started backend process with pid: 4188
+2022-03-01 05:19:15,688 INFO    MainThread:4178 [wandb_init.py:init():469] backend started and connected
+2022-03-01 05:19:15,730 INFO    MainThread:4178 [wandb_init.py:init():533] updated telemetry
+2022-03-01 05:19:15,802 INFO    MainThread:4178 [wandb_init.py:init():606] starting run threads in backend
+2022-03-01 05:19:20,810 INFO    MainThread:4178 [wandb_run.py:_console_start():1810] atexit reg
+2022-03-01 05:19:20,813 INFO    MainThread:4178 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.REDIRECT
+2022-03-01 05:19:20,814 INFO    MainThread:4178 [wandb_run.py:_redirect():1689] Redirecting console.
+2022-03-01 05:19:20,825 INFO    MainThread:4178 [wandb_run.py:_redirect():1745] Redirects installed.
+2022-03-01 05:19:20,825 INFO    MainThread:4178 [wandb_init.py:init():633] run started, returning control to user process

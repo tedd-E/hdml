@@ -1,0 +1,32 @@
+============================Starting loading mnist==========================#
+=================================mnist loaded===============================#
+INFO:root:*********partition data***************
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:traindata_cls_counts = {0: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 1: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 2: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 3: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 4: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}}
+INFO:root:train_dl_global number = 600
+INFO:root:test_dl_global number = 100
+INFO:root:client_idx = 0, local_sample_number = 600
+INFO:root:client_idx = 0, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 1, local_sample_number = 600
+INFO:root:client_idx = 1, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 2, local_sample_number = 600
+INFO:root:client_idx = 2, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 3, local_sample_number = 600
+INFO:root:client_idx = 3, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 4, local_sample_number = 600
+INFO:root:client_idx = 4, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:create_model. model_name = nn, output_dim = 10
+Traceback (most recent call last):
+  File "app_nn.py", line 345, in <module>
+    is_preprocessed=args.is_preprocessed)
+  File "/home/ersp2021/FedML-Server-XF/FedML/fedml_api/distributed/fedavg/FedAvgServerManager.py", line 21, in __init__
+    super().__init__(args, comm, rank, size, backend, mqtt_host, mqtt_port)
+  File "/home/ersp2021/FedML-Server-XF/FedML/fedml_core/distributed/server/server_manager.py", line 26, in __init__
+    self.com_manager = MqttCommManager(HOST, PORT, client_id=rank, client_num=size - 1)
+  File "/home/ersp2021/FedML-Server-XF/FedML/fedml_core/distributed/communication/mqtt/mqtt_comm_manager.py", line 32, in __init__
+    self._client.floop_start()
+AttributeError: 'Client' object has no attribute 'floop_start'

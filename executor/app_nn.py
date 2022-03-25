@@ -10,7 +10,7 @@ import torch
 import wandb
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
-sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
+# sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 
 import torch_hd.hdlayers as hd              # this??
 from executor.federated_hd import *
@@ -71,10 +71,10 @@ def add_args(parser):
                         choices=['uniform', 'normal'],
                         help='how to assign labels to clients in non-iid data distribution')
 
-    parser.add_argument('--client_num_in_total', type=int, default=8,
+    parser.add_argument('--client_num_in_total', type=int, default=2,
                         help='number of workers in a distributed cluster')
 
-    parser.add_argument('--client_num_per_round', type=int, default=8,
+    parser.add_argument('--client_num_per_round', type=int, default=2,
                         help='number of workers')
 
     parser.add_argument('--data_size_per_client', type=int, default=600,
@@ -245,7 +245,7 @@ def load_data(args, dataset_name):
         print(
             "============================Starting loading {}==========================#".format(
                 args.dataset))
-        data_dir = './../../../data/' + args.dataset
+        data_dir = 'data/' + args.dataset
         train_data_num, test_data_num, train_data_global, test_data_global, \
         train_data_local_num_dict, train_data_local_dict, test_data_local_dict, \
         class_num = data_loader(args.dataset, data_dir, args.partition_method,
@@ -255,6 +255,8 @@ def load_data(args, dataset_name):
         print(
             "================================={} loaded===============================#".format(
                 args.dataset))
+        print("pain")
+        print(data_loader)
     else:
         raise ValueError('dataset not supported: {}'.format(args.dataset))
 
@@ -266,9 +268,8 @@ def load_data(args, dataset_name):
 def create_model(args, model_name, output_dim):
     logging.info("create_model. model_name = %s, output_dim = %s" % (model_name, output_dim))
     model = None
-
     if model_name == "lr" and args.dataset == "cifar10":
-        model = LogisticRegression(32 * 32 * 3, output_dim)    # Dim?
+        model = LogisticRegression(32 * 32 * 3, output_dim)    #Dim?
         args.client_optimizer = "sgd"
     elif model_name == "rnn" and args.dataset == "shakespeare":
         model = RNN_OriginalFedAvg(28 * 28, output_dim)
@@ -365,5 +366,5 @@ if __name__ == '__main__':
     server_manager.run()
 
     # if run in debug mode, process will be single threaded by default
-    # app.run(host="127.0.0.1", port=5000)
+    #app.run(host="127.0.0.1", port=5000)
     app.run(host="0.0.0.0", port=5000)

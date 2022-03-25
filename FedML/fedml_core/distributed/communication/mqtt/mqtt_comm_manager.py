@@ -29,7 +29,7 @@ class MqttCommManager(BaseCommunicationManager):
         self._client.on_subscribe = self._on_subscribe
         # connect broker,connect() or connect_async()
         self._client.connect(host, port, keepalive=600)
-        self._client.floop_start()
+        self._client.loop_start()
         # self._client.loop_forever()
 
     def __del__(self):

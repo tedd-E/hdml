@@ -1,0 +1,20 @@
+2022-03-24 21:58:13,360 INFO    MainThread:3189 [internal.py:wandb_internal():90] W&B internal server running at pid: 3189, started at: 2022-03-24 21:58:13.356381
+2022-03-24 21:58:13,415 DEBUG   HandlerThread:3189 [handler.py:handle_request():130] handle_request: run_start
+2022-03-24 21:58:13,444 INFO    WriterThread:3189 [datastore.py:open_for_write():77] open: /home/ersp2021/FedML-Server-XF/executor/wandb/offline-run-20220324_215807-32l7vfi2/run-32l7vfi2.wandb
+2022-03-24 21:58:13,459 DEBUG   HandlerThread:3189 [meta.py:__init__():40] meta init
+2022-03-24 21:58:13,460 DEBUG   HandlerThread:3189 [meta.py:__init__():54] meta init done
+2022-03-24 21:58:13,462 DEBUG   HandlerThread:3189 [meta.py:probe():214] probe
+2022-03-24 21:58:13,489 DEBUG   HandlerThread:3189 [meta.py:_setup_git():204] setup git
+2022-03-24 21:58:13,669 DEBUG   HandlerThread:3189 [meta.py:_setup_git():211] setup git done
+2022-03-24 21:58:13,670 DEBUG   HandlerThread:3189 [meta.py:_save_pip():58] save pip
+2022-03-24 21:58:13,675 DEBUG   HandlerThread:3189 [meta.py:_save_pip():72] save pip done
+2022-03-24 21:58:13,675 DEBUG   HandlerThread:3189 [meta.py:_save_conda():79] save conda
+2022-03-24 21:58:32,868 DEBUG   HandlerThread:3189 [meta.py:_save_conda():89] save conda done
+2022-03-24 21:58:32,869 DEBUG   HandlerThread:3189 [meta.py:probe():252] probe done
+2022-03-24 22:11:03,633 WARNING MainThread:3189 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2022-03-24 22:11:03,977 WARNING MainThread:3189 [internal.py:wandb_internal():146] Internal process interrupt: 2
+2022-03-24 22:11:03,977 ERROR   MainThread:3189 [internal.py:wandb_internal():149] Internal process interrupted.
+2022-03-24 22:11:04,163 INFO    SenderThread:3189 [sender.py:finish():1070] shutting down sender
+2022-03-24 22:11:04,558 INFO    WriterThread:3189 [datastore.py:close():281] close: /home/ersp2021/FedML-Server-XF/executor/wandb/offline-run-20220324_215807-32l7vfi2/run-32l7vfi2.wandb
+2022-03-24 22:11:04,569 INFO    HandlerThread:3189 [handler.py:finish():731] shutting down handler
+2022-03-24 22:11:04,571 INFO    MainThread:3189 [internal.py:handle_exit():77] Internal process exited

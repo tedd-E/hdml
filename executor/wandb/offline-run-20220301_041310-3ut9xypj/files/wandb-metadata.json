@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.13.0-30-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.4",
+    "heartbeatAt": "2022-03-01T12:13:15.874322",
+    "startedAt": "2022-03-01T12:13:10.789163",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "app_nn.py",
+    "codePath": "executor/app_nn.py",
+    "git": {
+        "remote": "https://github.com/Orienfish/FedML-Server.git",
+        "commit": "051acd082a1002b2c0734b509ad46a7862fc5dde"
+    },
+    "email": null,
+    "root": "/home/ersp2021/FedML-Server-XF",
+    "host": "ersp2021",
+    "username": "ersp2021",
+    "executable": "/home/ersp2021/miniconda/envs/fedml/bin/python3"
+}

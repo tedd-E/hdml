@@ -25,6 +25,7 @@ def read_data_distribution(filename='./data_preprocessing/non-iid-distribution/C
                 else:
                     second_level_key = int(tmp[0])
                     distribution[first_level_key][second_level_key] = int(tmp[1].strip().replace(',', ''))
+                   
     return distribution
 
 
