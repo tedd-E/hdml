@@ -12,6 +12,12 @@ import wandb
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 
+import torch_hd.hdlayers as hd              # this??
+from executor.federated_hd import *
+from executor.mnistDataModule import MnistData
+from executor.cifarDataModule import CifarData
+from executor.fashionmnistDataModule import FashionMnistData
+
 from FedML.fedml_api.distributed.fedavg.FedAVGAggregator import FedAVGAggregator
 from FedML.fedml_api.distributed.fedavg.FedAvgServerManager import FedAVGServerManager
 from FedML.fedml_api.distributed.fedavg.MyModelTrainer import MyModelTrainer
@@ -38,8 +44,8 @@ def add_args(parser):
     return a parser added with args required by fit
     """
     # Training settings
-    parser.add_argument('--model', type=str, default='nn',
-                        choices=['lr', 'rnn', 'resnet56', 'mobilenet', 'nn'],
+    parser.add_argument('--model', type=str, default='hd',
+                        choices=['lr', 'rnn', 'resnet56', 'mobilenet', 'nn', 'hd'],
                         help='neural network used in training')
 
     parser.add_argument('--dataset', type=str, default='cifar10',
@@ -256,11 +262,13 @@ def load_data(args, dataset_name):
                train_data_local_num_dict, train_data_local_dict, test_data_local_dict, class_num]
     return dataset
 
+
 def create_model(args, model_name, output_dim):
     logging.info("create_model. model_name = %s, output_dim = %s" % (model_name, output_dim))
     model = None
+
     if model_name == "lr" and args.dataset == "cifar10":
-        model = LogisticRegression(32 * 32 * 3, output_dim)    #Dim?
+        model = LogisticRegression(32 * 32 * 3, output_dim)    # Dim?
         args.client_optimizer = "sgd"
     elif model_name == "rnn" and args.dataset == "shakespeare":
         model = RNN_OriginalFedAvg(28 * 28, output_dim)
@@ -275,6 +283,14 @@ def create_model(args, model_name, output_dim):
         model = CNN_FashionMNIST()
     elif model_name == "nn" and args.dataset == "cifar10":
         model = CNN_CIFAR10()
+    elif model_name == "hd":
+        encoder = nn.Sequential(
+            net,
+            hd.RandomProjectionEncoder(2048, 5000)  # hd.RandomProjectionEncoder(2048, args.D)
+        )
+        classifier = hd.HDClassifier(10, 5000)
+        model = (encoder, classifier)
+
     return model
 
 
@@ -308,7 +324,6 @@ if __name__ == '__main__':
     # Create the result directory if not exists
     if not os.path.exists(args.result_dir):
         os.makedirs(args.result_dir)
-    
 
     # Set the random seed. The np.random seed determines the dataset partition.
     # The torch_manual_seed determines the initial weight.
@@ -328,8 +343,12 @@ if __name__ == '__main__':
     # Note if the model is DNN (e.g., ResNet), the training will be very slow.
     # In this case, please use our FedML distributed version (./fedml_experiments/distributed_fedavg)
     model = create_model(args, model_name=args.model, output_dim=class_num)
-    model_trainer = MyModelTrainer(model)
 
+    if args.model == "hd":  # use encoder in place of model_trainer?
+        model_trainer = model[1]
+        model = model[0]
+    else:
+        model_trainer = MyModelTrainer(model)
 
     aggregator = FedAVGAggregator(train_data_global, test_data_global, train_data_num,
                                   train_data_local_dict, test_data_local_dict, train_data_local_num_dict,
@@ -346,5 +365,5 @@ if __name__ == '__main__':
     server_manager.run()
 
     # if run in debug mode, process will be single threaded by default
-    #app.run(host="127.0.0.1", port=5000)
+    # app.run(host="127.0.0.1", port=5000)
     app.run(host="0.0.0.0", port=5000)

@@ -11,6 +11,8 @@ except ImportError:
 
 class MyModelTrainer(ModelTrainer):
     def get_model_params(self):
+        # if isinstance(self.model, tuple):
+        #     return self.model[0].model.cpu().state_dict()
         return self.model.cpu().state_dict()
 
     def set_model_params(self, model_parameters):
