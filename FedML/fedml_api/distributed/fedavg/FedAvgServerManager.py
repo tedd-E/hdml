@@ -8,11 +8,11 @@ from .utils import transform_tensor_to_list
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../../")))
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../../../FedML")))
 try:
-    from fedml_core.distributed.communication.message import Message
-    from fedml_core.distributed.server.server_manager import ServerManager
-except ImportError:
     from FedML.fedml_core.distributed.communication.message import Message
     from FedML.fedml_core.distributed.server.server_manager import ServerManager
+except ModuleNotFoundError: # except ImportError
+    from fedml_core.distributed.communication.message import Message
+    from fedml_core.distributed.server.server_manager import ServerManager
 
 
 class FedAVGServerManager(ServerManager):

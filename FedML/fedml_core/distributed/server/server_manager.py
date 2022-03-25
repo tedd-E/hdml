@@ -1,7 +1,7 @@
 import logging
 from abc import abstractmethod
 
-from mpi4py import MPI
+import mpi4py
 
 from ..communication.mpi.com_manager import MpiCommunicationManager
 from ..communication.mqtt.mqtt_comm_manager import MqttCommManager
@@ -55,4 +55,4 @@ class ServerManager(Observer):
     def finish(self):
         logging.info("__finish server")
         if self.backend == "MPI":
-            MPI.COMM_WORLD.Abort()
+            mpi4py.MPI.COMM_WORLD.Abort()

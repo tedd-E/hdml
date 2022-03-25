@@ -12,11 +12,12 @@ import wandb
 sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../")))
 # sys.path.insert(0, os.path.abspath(os.path.join(os.getcwd(), "../../")))
 
-import torch_hd.hdlayers as hd              # this??
+import torch_hd.hdlayers as hd
 from executor.federated_hd import *
 from executor.mnistDataModule import MnistData
 from executor.cifarDataModule import CifarData
 from executor.fashionmnistDataModule import FashionMnistData
+from pl_bolts.models.self_supervised import SimCLR  # from models.py
 
 from FedML.fedml_api.distributed.fedavg.FedAVGAggregator import FedAVGAggregator
 from FedML.fedml_api.distributed.fedavg.FedAvgServerManager import FedAVGServerManager
@@ -34,7 +35,6 @@ from FedML.fedml_api.model.nlp.rnn import RNN_OriginalFedAvg
 from FedML.fedml_api.model.nn.NN import CNN_MNIST, CNN_FashionMNIST, CNN_CIFAR10
 
 from FedML.fedml_core.distributed.communication.observer import Observer
-
 from flask import Flask, request, jsonify, send_from_directory, abort
 
 
@@ -285,6 +285,11 @@ def create_model(args, model_name, output_dim):
     elif model_name == "nn" and args.dataset == "cifar10":
         model = CNN_CIFAR10()
     elif model_name == "hd":
+        weight_path = 'https://pl-bolts-weights.s3.us-east-2.amazonaws.com/simclr/simclr-cifar10-v1-exp12_87_52/epoch%3D960.ckpt'
+        net = SimCLR.load_from_checkpoint(
+            weight_path, strict=False, dataset='imagenet', maxpool1=False, first_conv=False, input_height=28)
+        net.freeze()
+
         encoder = nn.Sequential(
             net,
             hd.RandomProjectionEncoder(2048, 5000)  # hd.RandomProjectionEncoder(2048, args.D)
