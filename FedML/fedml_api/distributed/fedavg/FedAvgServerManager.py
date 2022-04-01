@@ -16,9 +16,8 @@ except ImportError:
 
 
 class FedAVGServerManager(ServerManager):
-    def __init__(self, args, aggregator, comm=None, rank=0, size=0, backend="MPI",
-                 mqtt_host="127.0.0.1", mqtt_port=1883, is_preprocessed=False):
-        super().__init__(args, comm, rank, size, backend, mqtt_host, mqtt_port)
+    def __init__(self, args, aggregator, comm=None, rank=0, size=0, backend="MPI", is_preprocessed=False):
+        super().__init__(args, comm, rank, size, backend)
         self.args = args
         self.aggregator = aggregator
         self.round_num = args.comm_round
@@ -29,12 +28,9 @@ class FedAVGServerManager(ServerManager):
         super().run()
 
     def send_init_msg(self):
-        # sampling clients
-        client_indexes = self.aggregator.client_sampling(self.round_idx, self.args.client_num_in_total,
-                                                         self.args.client_num_per_round)
         global_model_params = self.aggregator.get_global_model_params()
         for process_id in range(1, self.size):
-            self.send_message_init_config(process_id, global_model_params, client_indexes[process_id - 1])
+            self.send_message_init_config(process_id, global_model_params)
 
     def register_message_receive_handlers(self):
         self.register_message_receive_handler(MyMessage.MSG_TYPE_C2S_SEND_MODEL_TO_SERVER,
@@ -42,14 +38,12 @@ class FedAVGServerManager(ServerManager):
 
     def handle_message_receive_model_from_client(self, msg_params):
         sender_id = msg_params.get(MyMessage.MSG_ARG_KEY_SENDER)
-        model_params = msg_params.get(MyMessage.MSG_ARG_KEY_MODEL_PARAMS)
+        client_hyper_vec = msg_params.get(MyMessage.MSG_ARG_KEY_MODEL_PARAMS)
         local_sample_number = msg_params.get(MyMessage.MSG_ARG_KEY_NUM_SAMPLES)
 
-        self.aggregator.add_local_trained_result(sender_id - 1, model_params, local_sample_number)
+        self.aggregator.add_local_trained_result(sender_id - 1, client_hyper_vec, local_sample_number)
         b_all_received = self.aggregator.check_whether_all_receive()
-        logging.info("round={} b_all_received={}".format(self.round_idx, b_all_received))
-
-        # Start aggregation once weights from all clients are received
+        logging.info("b_all_received = " + str(b_all_received))
         if b_all_received:
             global_model_params = self.aggregator.aggregate()
             self.aggregator.test_on_server_for_all_clients(self.round_idx)
@@ -60,26 +54,9 @@ class FedAVGServerManager(ServerManager):
                 self.finish()
                 return
 
-            # Note: args.is_preprocessed is used in the case of dynamic local dataset
-            # args.is_preprocessed indicates local dataset is configured in the beginning
-            # for each time stamp
-            # In our case, we use static dataset, so the client_indexes here is not used
-            # after transmitted back to clients
-            if self.is_preprocessed:
-                # sampling has already been done in data preprocessor
-                client_indexes = [self.round_idx] * self.args.client_num_per_round
-                # print('indexes of clients: ' + str(client_indexes))
-            else:
-                # # sampling clients
-                client_indexes = self.aggregator.client_sampling(self.round_idx,
-                                                                 self.args.client_num_in_total,
-                                                                 self.args.client_num_per_round)
+            print("size = %d" % self.size)
 
-            # print("size = %d" % self.size)
-            if self.args.is_mobile == 1:
-                print("transform_tensor_to_list")
-                global_model_params = transform_tensor_to_list(global_model_params)
-
+            #todo, client_indexes not valid
             for receiver_id in range(1, self.size):
                 self.send_message_sync_model_to_client(receiver_id, global_model_params,
                                                        client_indexes[receiver_id - 1])
