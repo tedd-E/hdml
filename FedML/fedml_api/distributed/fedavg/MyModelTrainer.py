@@ -64,12 +64,19 @@ class MyModelTrainer(ModelTrainer):
             'test_recall': 0,
             'test_total': 0
         }
+        
+
 
         criterion = nn.CrossEntropyLoss().to(device)
+        
         with torch.no_grad():
             for batch_idx, (x, target) in enumerate(test_data):
                 x = x.to(device)
                 target = target.to(device)
+                
+                if(args.dataset=="cifar10"):
+                    target = target.type(torch.LongTensor)
+                
                 pred = model(x)
                 loss = criterion(pred, target)
                 if args.dataset == "stackoverflow_lr":
@@ -83,7 +90,7 @@ class MyModelTrainer(ModelTrainer):
                 else:
                     _, predicted = torch.max(pred, -1)
                     correct = predicted.eq(target).sum()
-
+                
                 metrics['test_correct'] += correct.item()
                 metrics['test_loss'] += loss.item() * target.size(0)
                 metrics['test_total'] += target.size(0)

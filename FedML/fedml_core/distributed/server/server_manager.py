@@ -10,7 +10,7 @@ from ..communication.observer import Observer
 
 class ServerManager(Observer):
 
-    def __init__(self, args, comm=None, rank=0, size=0, backend="MPI",
+    def __init__(self, args, comm=None, rank=0, size=0, backend="MQTT",
                  mqtt_host="127.0.0.1", mqtt_port=1883):
         self.args = args
         self.size = size

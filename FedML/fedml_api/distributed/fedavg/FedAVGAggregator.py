@@ -102,6 +102,10 @@ class FedAVGAggregator(object):
             train_tot_corrects = []
             train_losses = []
             cur_time = time.time() - self.start_time
+<<<<<<< Updated upstream
+=======
+            
+>>>>>>> Stashed changes
 
             # Test on each client's local training dataset
             for client_idx in range(self.args.client_num_in_total):
@@ -119,6 +123,11 @@ class FedAVGAggregator(object):
                 if self.args.ci == 1:
                     break
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
             # test on training dataset
             train_acc = sum(train_tot_corrects) / sum(train_num_samples)
             train_loss = sum(train_losses) / sum(train_num_samples)
@@ -126,6 +135,11 @@ class FedAVGAggregator(object):
             wandb.log({"Train/Loss": train_loss, "round": round_idx})
             stats = {'training_acc': train_acc, 'training_loss': train_loss}
             logging.info(stats)
+<<<<<<< Updated upstream
+=======
+            
+            
+>>>>>>> Stashed changes
 
             # Test on global test dataset
             test_num_samples = []
@@ -137,6 +151,10 @@ class FedAVGAggregator(object):
             test_tot_corrects.append(copy.deepcopy(test_tot_correct))
             test_num_samples.append(copy.deepcopy(test_num_sample))
             test_losses.append(copy.deepcopy(test_loss))
+<<<<<<< Updated upstream
+=======
+            
+>>>>>>> Stashed changes
 
             # test on test dataset
             test_acc = sum(test_tot_corrects) / sum(test_num_samples)
@@ -145,6 +163,10 @@ class FedAVGAggregator(object):
             wandb.log({"Test/Loss": test_loss, "round": round_idx})
             stats = {'test_acc': test_acc, 'test_loss': test_loss}
             logging.info(stats)
+<<<<<<< Updated upstream
+=======
+            
+>>>>>>> Stashed changes
 
             # Log time and stats
             with open(self.args.result_dir + '/result.txt', 'a+') as f:
