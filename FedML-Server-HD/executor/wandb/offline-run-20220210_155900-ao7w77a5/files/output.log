@@ -1,0 +1,31 @@
+
+============================Starting loading mnist==========================#
+INFO:root:*********partition data***************
+Traceback (most recent call last):
+  File "app_nn.py", line 323, in <module>
+    dataset = load_data(args, args.dataset)
+  File "app_nn.py", line 248, in load_data
+    args.data_size_per_client)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/load_data.py", line 231, in load_partition_data
+    data_size_per_client)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/load_data.py", line 159, in partition_data
+    X_train, y_train, X_test, y_test = load_mnist_data(datadir)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/MNIST/data_loader.py", line 70, in load_mnist_data
+    mnist_train_ds = MNIST_truncated(datadir, train=True, download=True, transform=train_transform)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/MNIST/datasets.py", line 51, in __init__
+    self.target_transform, self.download)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/mnist.py", line 70, in __init__
+    self.download()
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/mnist.py", line 131, in download
+    makedir_exist_ok(self.raw_folder)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/utils.py", line 51, in makedir_exist_ok
+    os.makedirs(dirpath)
+  File "/usr/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: './../../../data'

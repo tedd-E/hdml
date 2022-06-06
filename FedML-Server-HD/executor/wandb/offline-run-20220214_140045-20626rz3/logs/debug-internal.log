@@ -1,0 +1,79 @@
+2022-02-14 14:00:47,565 INFO    MainThread:5675 [internal.py:wandb_internal():92] W&B internal server running at pid: 5675, started at: 2022-02-14 14:00:47.564424
+2022-02-14 14:00:47,573 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: run_start
+2022-02-14 14:00:47,573 INFO    WriterThread:5675 [datastore.py:open_for_write():77] open: /home/pi/FedML-Server/executor/wandb/offline-run-20220214_140045-20626rz3/run-20626rz3.wandb
+2022-02-14 14:00:47,580 DEBUG   HandlerThread:5675 [meta.py:__init__():36] meta init
+2022-02-14 14:00:47,580 DEBUG   HandlerThread:5675 [meta.py:__init__():50] meta init done
+2022-02-14 14:00:47,580 DEBUG   HandlerThread:5675 [meta.py:probe():210] probe
+2022-02-14 14:00:47,583 DEBUG   HandlerThread:5675 [meta.py:_setup_git():200] setup git
+2022-02-14 14:00:47,613 DEBUG   HandlerThread:5675 [meta.py:_setup_git():207] setup git done
+2022-02-14 14:00:47,613 DEBUG   HandlerThread:5675 [meta.py:_save_pip():54] save pip
+2022-02-14 14:00:47,614 DEBUG   HandlerThread:5675 [meta.py:_save_pip():68] save pip done
+2022-02-14 14:00:47,614 DEBUG   HandlerThread:5675 [meta.py:probe():248] probe done
+2022-02-14 14:00:50,813 DEBUG   SenderThread:5675 [sender.py:send():235] send: exit
+2022-02-14 14:00:50,813 INFO    SenderThread:5675 [sender.py:send_exit():371] handling exit code: 1
+2022-02-14 14:00:50,815 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-14 14:00:50,815 INFO    SenderThread:5675 [sender.py:send_exit():373] handling runtime: 3
+2022-02-14 14:00:50,816 INFO    SenderThread:5675 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-14 14:00:50,816 INFO    SenderThread:5675 [sender.py:send_exit():379] send defer
+2022-02-14 14:00:50,817 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: poll_exit
+2022-02-14 14:00:50,819 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,819 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-14 14:00:50,820 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,820 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-14 14:00:50,820 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 1
+2022-02-14 14:00:50,822 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,822 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-14 14:00:50,914 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,916 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-14 14:00:50,916 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 2
+2022-02-14 14:00:50,918 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,918 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-14 14:00:50,919 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,919 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-14 14:00:50,919 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 3
+2022-02-14 14:00:50,923 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,923 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-14 14:00:50,925 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,925 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-14 14:00:50,926 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-14 14:00:50,926 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 4
+2022-02-14 14:00:50,928 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: poll_exit
+2022-02-14 14:00:50,929 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,930 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-14 14:00:50,931 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,931 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-14 14:00:50,932 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 5
+2022-02-14 14:00:50,934 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,934 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-14 14:00:50,935 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,935 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-14 14:00:50,935 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 6
+2022-02-14 14:00:50,937 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,938 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-14 14:00:50,938 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,938 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-14 14:00:50,939 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 7
+2022-02-14 14:00:50,941 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,941 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-14 14:00:50,941 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,942 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-14 14:00:50,942 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 8
+2022-02-14 14:00:50,944 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,944 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-14 14:00:50,945 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,945 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-14 14:00:50,946 INFO    SenderThread:5675 [sender.py:transition_state():392] send defer: 9
+2022-02-14 14:00:50,949 DEBUG   SenderThread:5675 [sender.py:send():235] send: final
+2022-02-14 14:00:50,951 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: defer
+2022-02-14 14:00:50,951 INFO    HandlerThread:5675 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-14 14:00:50,951 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: defer
+2022-02-14 14:00:50,952 INFO    SenderThread:5675 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-14 14:00:51,036 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-14 14:00:51,037 DEBUG   SenderThread:5675 [sender.py:send_request():249] send_request: poll_exit
+2022-02-14 14:00:51,042 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-14 14:00:51,046 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-14 14:00:51,050 DEBUG   HandlerThread:5675 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-14 14:00:51,051 INFO    HandlerThread:5675 [handler.py:finish():739] shutting down handler
+2022-02-14 14:00:51,949 INFO    WriterThread:5675 [datastore.py:close():281] close: /home/pi/FedML-Server/executor/wandb/offline-run-20220214_140045-20626rz3/run-20626rz3.wandb
+2022-02-14 14:00:52,038 INFO    SenderThread:5675 [sender.py:finish():1075] shutting down sender
+2022-02-14 14:00:52,040 INFO    MainThread:5675 [internal.py:handle_exit():79] Internal process exited

@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.10.17-v7l+-armv7l-with-debian-10.9",
+    "python": "3.7.3",
+    "heartbeatAt": "2022-02-10T23:42:38.879489",
+    "startedAt": "2022-02-10T23:42:37.222866",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "app_nn.py",
+    "codePath": "executor/app_nn.py",
+    "git": {
+        "remote": "https://github.com/Orienfish/FedML-Server",
+        "commit": "051acd082a1002b2c0734b509ad46a7862fc5dde"
+    },
+    "email": null,
+    "root": "/home/pi/FedML-Server",
+    "host": "raspberrypi",
+    "username": "pi",
+    "executable": "/usr/bin/python3"
+}

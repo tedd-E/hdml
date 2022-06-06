@@ -1,0 +1,29 @@
+============================Starting loading fashionmnist==========================#
+=================================fashionmnist loaded===============================#
+ * Serving Flask app "app_nn" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Connection returned with result code:0
+0
+0
+0
+0
+0
+onSubscribe :1
+onSubscribe :2
+onSubscribe :3
+onSubscribe :4
+onSubscribe :5
+transform_tensor_to_list
+json string size = 654055
+json string size = 654055
+json string size = 654055
+json string size = 654055
+json string size = 654055
+transform_tensor_to_list
+json string size = 654082
+json string size = 654082
+json string size = 654082
+json string size = 654082

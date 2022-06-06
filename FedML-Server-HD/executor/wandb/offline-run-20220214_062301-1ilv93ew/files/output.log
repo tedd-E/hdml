@@ -1,0 +1,136 @@
+============================Starting loading mnist==========================#
+=================================mnist loaded===============================#
+ * Serving Flask app "app_nn" (lazy loading)
+ * Environment: production
+Connection returned with result code:0
+[31m   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+0
+ * Debug mode: off
+onSubscribe :1
+transform_tensor_to_list
+json string size = 9612866
+transform_tensor_to_list
+json string size = 9612538
+transform_tensor_to_list
+json string size = 9612819
+transform_tensor_to_list
+json string size = 9612174
+transform_tensor_to_list
+json string size = 9611490
+transform_tensor_to_list
+json string size = 9611629
+transform_tensor_to_list
+json string size = 9611922
+transform_tensor_to_list
+json string size = 9611597
+transform_tensor_to_list
+json string size = 9611064
+INFO:root:*********partition data***************
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:traindata_cls_counts = {0: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}}
+INFO:root:train_dl_global number = 600
+INFO:root:test_dl_global number = 100
+INFO:root:client_idx = 0, local_sample_number = 600
+INFO:root:client_idx = 0, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:create_model. model_name = nn, output_dim = 10
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.0.137.51:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:10.0.137.54 - - [14/Feb/2022 06:26:23] "POST /api/register?device_id=3 HTTP/1.1" 200 -
+INFO:root:add_model. index = 0
+INFO:root:round=0 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 0
+INFO:root:{'training_acc': 0.7916666666666666, 'training_loss': 0.5806236863136292}
+INFO:root:{'test_acc': 0.7863, 'test_loss': 0.6366363157331943}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=1 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 1
+INFO:root:{'training_acc': 0.96, 'training_loss': 0.16259311760465303}
+INFO:root:{'test_acc': 0.8982, 'test_loss': 0.333259746003896}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=2 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 2
+INFO:root:{'training_acc': 0.9883333333333333, 'training_loss': 0.06687099983294804}
+INFO:root:{'test_acc': 0.9098, 'test_loss': 0.31131242859177294}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=3 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 3
+INFO:root:{'training_acc': 0.9983333333333333, 'training_loss': 0.03195488561565677}
+INFO:root:{'test_acc': 0.9181, 'test_loss': 0.31637391665251924}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=4 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 4
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.01827295683324337}
+INFO:root:{'test_acc': 0.9211, 'test_loss': 0.31403919600299557}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=5 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 5
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.009821558371186256}
+INFO:root:{'test_acc': 0.9222, 'test_loss': 0.31911822023335845}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=6 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 6
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.007082692114636302}
+INFO:root:{'test_acc': 0.923, 'test_loss': 0.32586504842620345}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=7 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 7
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.0054204332797477646}
+INFO:root:{'test_acc': 0.9241, 'test_loss': 0.33223623312718703}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=8 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 8
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.004326648738545676}
+INFO:root:{'test_acc': 0.9255, 'test_loss': 0.33817017590452453}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=9 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 9
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.0035961056128144264}

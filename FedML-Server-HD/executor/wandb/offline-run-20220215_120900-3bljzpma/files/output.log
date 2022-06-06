@@ -1,0 +1,884 @@
+============================Starting loading cifar10==========================#
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+=================================cifar10 loaded===============================#
+Connection returned with result code:0
+ * Serving Flask app "app_nn" (lazy loading)
+0
+ * Environment: production
+0
+0
+0
+[31m   WARNING: This is a development server. Do not use it in a production deployment.
+0
+   Use a production WSGI server instead.
+0
+ * Debug mode: off
+onSubscribe :1
+onSubscribe :2
+onSubscribe :3
+onSubscribe :4
+onSubscribe :5
+onSubscribe :6
+transform_tensor_to_list
+json string size = 1374398
+json string size = 1374398
+json string size = 1374398
+json string size = 1374398
+json string size = 1374398
+json string size = 1374398
+transform_tensor_to_list
+json string size = 1374519
+json string size = 1374519
+json string size = 1374519
+json string size = 1374519
+json string size = 1374519
+json string size = 1374519
+transform_tensor_to_list
+json string size = 1374388
+json string size = 1374388
+json string size = 1374388
+json string size = 1374388
+json string size = 1374388
+json string size = 1374388
+transform_tensor_to_list
+json string size = 1374152
+json string size = 1374152
+json string size = 1374152
+json string size = 1374152
+json string size = 1374152
+json string size = 1374152
+transform_tensor_to_list
+json string size = 1374100
+json string size = 1374100
+json string size = 1374100
+json string size = 1374100
+json string size = 1374100
+json string size = 1374100
+transform_tensor_to_list
+json string size = 1374081
+json string size = 1374081
+json string size = 1374081
+json string size = 1374081
+json string size = 1374081
+json string size = 1374081
+transform_tensor_to_list
+json string size = 1373804
+json string size = 1373804
+json string size = 1373804
+json string size = 1373804
+json string size = 1373804
+json string size = 1373804
+transform_tensor_to_list
+json string size = 1373392
+json string size = 1373392
+json string size = 1373392
+json string size = 1373392
+json string size = 1373392
+json string size = 1373392
+transform_tensor_to_list
+json string size = 1373596
+json string size = 1373596
+json string size = 1373596
+json string size = 1373596
+json string size = 1373596
+json string size = 1373596
+transform_tensor_to_list
+json string size = 1373482
+json string size = 1373482
+json string size = 1373482
+json string size = 1373482
+json string size = 1373482
+json string size = 1373482
+transform_tensor_to_list
+json string size = 1373263
+json string size = 1373263
+json string size = 1373263
+json string size = 1373263
+json string size = 1373263
+json string size = 1373263
+transform_tensor_to_list
+json string size = 1373266
+json string size = 1373266
+json string size = 1373266
+json string size = 1373266
+json string size = 1373266
+json string size = 1373266
+transform_tensor_to_list
+json string size = 1373370
+json string size = 1373370
+json string size = 1373370
+json string size = 1373370
+json string size = 1373370
+json string size = 1373370
+transform_tensor_to_list
+json string size = 1373238
+json string size = 1373238
+json string size = 1373238
+json string size = 1373238
+json string size = 1373238
+json string size = 1373238
+transform_tensor_to_list
+json string size = 1373024
+json string size = 1373024
+json string size = 1373024
+json string size = 1373024
+json string size = 1373024
+json string size = 1373024
+transform_tensor_to_list
+json string size = 1373101
+json string size = 1373101
+json string size = 1373101
+json string size = 1373101
+json string size = 1373101
+json string size = 1373101
+transform_tensor_to_list
+json string size = 1373163
+json string size = 1373163
+json string size = 1373163
+json string size = 1373163
+json string size = 1373163
+json string size = 1373163
+transform_tensor_to_list
+json string size = 1373111
+json string size = 1373111
+json string size = 1373111
+json string size = 1373111
+json string size = 1373111
+json string size = 1373111
+transform_tensor_to_list
+json string size = 1373310
+json string size = 1373310
+json string size = 1373310
+json string size = 1373310
+json string size = 1373310
+json string size = 1373310
+INFO:root:*********partition data***************
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:traindata_cls_counts = {0: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 1: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 2: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 3: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 4: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}, 5: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}}
+INFO:root:train_dl_global number = 500
+INFO:root:test_dl_global number = 100
+INFO:root:client_idx = 0, local_sample_number = 600
+INFO:root:client_idx = 0, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 1, local_sample_number = 600
+INFO:root:client_idx = 1, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 2, local_sample_number = 600
+INFO:root:client_idx = 2, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 3, local_sample_number = 600
+INFO:root:client_idx = 3, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 4, local_sample_number = 600
+INFO:root:client_idx = 4, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:client_idx = 5, local_sample_number = 600
+INFO:root:client_idx = 5, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:create_model. model_name = nn, output_dim = 10
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.0.137.51:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:10.0.137.38 - - [15/Feb/2022 12:10:20] "POST /api/register?device_id=4 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.137.46 - - [15/Feb/2022 12:10:22] "POST /api/register?device_id=3 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.137.84 - - [15/Feb/2022 12:10:24] "POST /api/register?device_id=1 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.137.61 - - [15/Feb/2022 12:10:27] "POST /api/register?device_id=5 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.137.44 - - [15/Feb/2022 12:10:29] "POST /api/register?device_id=6 HTTP/1.1" 200 -
+INFO:werkzeug:10.0.137.52 - - [15/Feb/2022 12:10:57] "POST /api/register?device_id=0 HTTP/1.1" 200 -
+INFO:root:add_model. index = 0
+INFO:root:round=0 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=0 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=0 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=0 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=0 b_all_received=False
+INFO:root:add_model. index = 5
+INFO:root:round=0 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 0
+INFO:root:{'training_acc': 0.12472222222222222, 'training_loss': 2.3019100758764477}
+INFO:root:{'test_acc': 0.1354, 'test_loss': 2.3014409232139585}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=1 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=1 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=1 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=1 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=1 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=1 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 1
+INFO:root:{'training_acc': 0.13305555555555557, 'training_loss': 2.3000797231992087}
+INFO:root:{'test_acc': 0.138, 'test_loss': 2.2991003298759463}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 2
+INFO:root:round=2 b_all_received=False
+INFO:root:add_model. index = 5
+INFO:root:round=2 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=2 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=2 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=2 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=2 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 2
+INFO:root:{'training_acc': 0.1375, 'training_loss': 2.297204222944048}
+INFO:root:{'test_acc': 0.1377, 'test_loss': 2.2951199436187744}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=3 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=3 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=3 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=3 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=3 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=3 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 3
+INFO:root:{'training_acc': 0.15444444444444444, 'training_loss': 2.289920859866672}
+INFO:root:{'test_acc': 0.1614, 'test_loss': 2.285934751033783}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 2
+INFO:root:round=4 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=4 b_all_received=False
+INFO:root:add_model. index = 5
+INFO:root:round=4 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=4 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=4 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=4 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 4
+INFO:root:{'training_acc': 0.18138888888888888, 'training_loss': 2.2666026486290827}
+INFO:root:{'test_acc': 0.1869, 'test_loss': 2.255634517669678}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=5 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=5 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=5 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=5 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=5 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=5 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 5
+INFO:root:{'training_acc': 0.19333333333333333, 'training_loss': 2.1911962231000266}
+INFO:root:{'test_acc': 0.2027, 'test_loss': 2.1634149885177614}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=6 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=6 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=6 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=6 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=6 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=6 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 6
+INFO:root:{'training_acc': 0.2313888888888889, 'training_loss': 2.0904432038466134}
+INFO:root:{'test_acc': 0.2446, 'test_loss': 2.0531619894504547}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=7 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=7 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=7 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=7 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=7 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=7 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 7
+INFO:root:{'training_acc': 0.25555555555555554, 'training_loss': 2.028528345955743}
+INFO:root:{'test_acc': 0.275, 'test_loss': 1.9856733357906342}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=8 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=8 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=8 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=8 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=8 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=8 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 8
+INFO:root:{'training_acc': 0.2561111111111111, 'training_loss': 1.9964024821917217}
+INFO:root:{'test_acc': 0.2937, 'test_loss': 1.9300658869743348}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=9 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=9 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=9 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=9 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=9 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=9 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 9
+INFO:root:{'training_acc': 0.27416666666666667, 'training_loss': 1.959448559416665}
+INFO:root:{'test_acc': 0.3092, 'test_loss': 1.8940547227859497}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=10 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=10 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=10 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=10 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=10 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=10 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 10
+INFO:root:{'training_acc': 0.2927777777777778, 'training_loss': 1.929508450958464}
+INFO:root:{'test_acc': 0.3236, 'test_loss': 1.8549091553688049}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=11 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=11 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=11 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=11 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=11 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=11 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 11
+INFO:root:{'training_acc': 0.29583333333333334, 'training_loss': 1.9210701915952895}
+INFO:root:{'test_acc': 0.3346, 'test_loss': 1.8343562805652618}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=12 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=12 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=12 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=12 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=12 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=12 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 12
+INFO:root:{'training_acc': 0.31333333333333335, 'training_loss': 1.884589907195833}
+INFO:root:{'test_acc': 0.3463, 'test_loss': 1.7962352001667024}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=13 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=13 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=13 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=13 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=13 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=13 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 13
+INFO:root:{'training_acc': 0.30722222222222223, 'training_loss': 1.8734112878640492}
+INFO:root:{'test_acc': 0.3447, 'test_loss': 1.7852398931980134}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=14 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=14 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=14 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=14 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=14 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=14 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 14
+INFO:root:{'training_acc': 0.3075, 'training_loss': 1.864052563905716}
+INFO:root:{'test_acc': 0.3577, 'test_loss': 1.7564261388778686}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=15 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=15 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=15 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=15 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=15 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=15 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 15
+INFO:root:{'training_acc': 0.3275, 'training_loss': 1.8298261198732588}
+INFO:root:{'test_acc': 0.3642, 'test_loss': 1.7373334467411041}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=16 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=16 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=16 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=16 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=16 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=16 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 16
+INFO:root:{'training_acc': 0.3238888888888889, 'training_loss': 1.834376272228029}
+INFO:root:{'test_acc': 0.3641, 'test_loss': 1.7398810744285584}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=17 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=17 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=17 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=17 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=17 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=17 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 17
+INFO:root:{'training_acc': 0.3372222222222222, 'training_loss': 1.8069851166672177}
+INFO:root:{'test_acc': 0.3797, 'test_loss': 1.6976410007476808}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 2
+INFO:root:round=18 b_all_received=False
+INFO:root:add_model. index = 5
+INFO:root:round=18 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=18 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=18 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=18 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=18 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 18
+INFO:root:{'training_acc': 0.3383333333333333, 'training_loss': 1.8038102289040883}
+INFO:root:{'test_acc': 0.3793, 'test_loss': 1.6907816421985626}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 2
+INFO:root:topic = fedml0_2
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 3
+INFO:root:topic = fedml0_3
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 4
+INFO:root:topic = fedml0_4
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 5
+INFO:root:topic = fedml0_5
+INFO:root:sent
+INFO:root:send_message_sync_model_to_client. receive_id = 6
+INFO:root:topic = fedml0_6
+INFO:root:sent
+INFO:root:add_model. index = 5
+INFO:root:round=19 b_all_received=False
+INFO:root:add_model. index = 2
+INFO:root:round=19 b_all_received=False
+INFO:root:add_model. index = 1
+INFO:root:round=19 b_all_received=False
+INFO:root:add_model. index = 3
+INFO:root:round=19 b_all_received=False
+INFO:root:add_model. index = 0
+INFO:root:round=19 b_all_received=False
+INFO:root:add_model. index = 4
+INFO:root:round=19 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 6
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 19
+INFO:root:{'training_acc': 0.3377777777777778, 'training_loss': 1.780639539162318}
+INFO:root:{'test_acc': 0.3877, 'test_loss': 1.6694173860549926}
+INFO:root:__finish server

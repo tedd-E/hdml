@@ -1,0 +1,17 @@
+============================Starting loading mnist==========================#
+=================================mnist loaded===============================#
+Connection returned with result code:0
+ * Serving Flask app "app_nn" (lazy loading)
+0
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+onSubscribe :1
+transform_tensor_to_list
+json string size = 9613301
+transform_tensor_to_list
+json string size = 9613468
+transform_tensor_to_list
+json string size = 9612905
+transform_tensor_to_list

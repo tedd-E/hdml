@@ -1,0 +1,77 @@
+2022-02-10 16:10:38,637 INFO    MainThread:1615 [internal.py:wandb_internal():92] W&B internal server running at pid: 1615, started at: 2022-02-10 16:10:38.636978
+2022-02-10 16:10:38,645 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: run_start
+2022-02-10 16:10:38,646 INFO    WriterThread:1615 [datastore.py:open_for_write():77] open: /home/pi/FedML-Server/executor/wandb/offline-run-20220210_161037-1qxtyz0g/run-1qxtyz0g.wandb
+2022-02-10 16:10:38,652 DEBUG   HandlerThread:1615 [meta.py:__init__():36] meta init
+2022-02-10 16:10:38,653 DEBUG   HandlerThread:1615 [meta.py:__init__():50] meta init done
+2022-02-10 16:10:38,653 DEBUG   HandlerThread:1615 [meta.py:probe():210] probe
+2022-02-10 16:10:38,656 DEBUG   HandlerThread:1615 [meta.py:_setup_git():200] setup git
+2022-02-10 16:10:38,687 DEBUG   HandlerThread:1615 [meta.py:_setup_git():207] setup git done
+2022-02-10 16:10:38,688 DEBUG   HandlerThread:1615 [meta.py:_save_pip():54] save pip
+2022-02-10 16:10:38,689 DEBUG   HandlerThread:1615 [meta.py:_save_pip():68] save pip done
+2022-02-10 16:10:38,689 DEBUG   HandlerThread:1615 [meta.py:probe():248] probe done
+2022-02-10 16:10:42,952 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-10 16:10:42,953 DEBUG   SenderThread:1615 [sender.py:send():235] send: exit
+2022-02-10 16:10:42,956 INFO    SenderThread:1615 [sender.py:send_exit():371] handling exit code: 1
+2022-02-10 16:10:42,957 INFO    SenderThread:1615 [sender.py:send_exit():373] handling runtime: 4
+2022-02-10 16:10:42,958 INFO    SenderThread:1615 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-10 16:10:42,959 INFO    SenderThread:1615 [sender.py:send_exit():379] send defer
+2022-02-10 16:10:42,960 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: poll_exit
+2022-02-10 16:10:42,964 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,965 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-10 16:10:42,966 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,966 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-10 16:10:42,967 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 1
+2022-02-10 16:10:42,969 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,970 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-10 16:10:42,985 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,986 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-10 16:10:42,987 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 2
+2022-02-10 16:10:42,988 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,989 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 2
+2022-02-10 16:10:42,989 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,989 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 2
+2022-02-10 16:10:42,989 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 3
+2022-02-10 16:10:42,990 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,991 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 3
+2022-02-10 16:10:42,992 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,992 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 3
+2022-02-10 16:10:42,992 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 4
+2022-02-10 16:10:42,993 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,993 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 4
+2022-02-10 16:10:42,994 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,994 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 4
+2022-02-10 16:10:42,994 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 5
+2022-02-10 16:10:42,995 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,996 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 5
+2022-02-10 16:10:42,996 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,996 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 5
+2022-02-10 16:10:42,996 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 6
+2022-02-10 16:10:42,998 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,998 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 6
+2022-02-10 16:10:42,998 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:42,998 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 6
+2022-02-10 16:10:42,998 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 7
+2022-02-10 16:10:42,999 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:42,999 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 7
+2022-02-10 16:10:43,000 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:43,000 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 7
+2022-02-10 16:10:43,000 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 8
+2022-02-10 16:10:43,001 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:43,001 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 8
+2022-02-10 16:10:43,001 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:43,001 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 8
+2022-02-10 16:10:43,002 INFO    SenderThread:1615 [sender.py:transition_state():392] send defer: 9
+2022-02-10 16:10:43,003 DEBUG   SenderThread:1615 [sender.py:send():235] send: final
+2022-02-10 16:10:43,004 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: defer
+2022-02-10 16:10:43,004 INFO    HandlerThread:1615 [handler.py:handle_request_defer():154] handle defer: 9
+2022-02-10 16:10:43,005 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: defer
+2022-02-10 16:10:43,005 INFO    SenderThread:1615 [sender.py:send_request_defer():388] handle sender defer: 9
+2022-02-10 16:10:43,071 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-10 16:10:43,072 DEBUG   SenderThread:1615 [sender.py:send_request():249] send_request: poll_exit
+2022-02-10 16:10:43,075 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: get_summary
+2022-02-10 16:10:43,077 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: sampled_history
+2022-02-10 16:10:43,079 DEBUG   HandlerThread:1615 [handler.py:handle_request():131] handle_request: shutdown
+2022-02-10 16:10:43,079 INFO    HandlerThread:1615 [handler.py:finish():739] shutting down handler
+2022-02-10 16:10:44,004 INFO    WriterThread:1615 [datastore.py:close():281] close: /home/pi/FedML-Server/executor/wandb/offline-run-20220210_161037-1qxtyz0g/run-1qxtyz0g.wandb
+2022-02-10 16:10:44,072 INFO    SenderThread:1615 [sender.py:finish():1075] shutting down sender
+2022-02-10 16:10:44,074 INFO    MainThread:1615 [internal.py:handle_exit():79] Internal process exited

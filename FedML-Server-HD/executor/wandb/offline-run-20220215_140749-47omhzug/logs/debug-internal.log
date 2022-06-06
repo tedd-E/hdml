@@ -1,0 +1,35 @@
+2022-02-15 14:07:51,482 INFO    MainThread:13113 [internal.py:wandb_internal():92] W&B internal server running at pid: 13113, started at: 2022-02-15 14:07:51.482259
+2022-02-15 14:07:51,491 DEBUG   HandlerThread:13113 [handler.py:handle_request():131] handle_request: run_start
+2022-02-15 14:07:51,491 INFO    WriterThread:13113 [datastore.py:open_for_write():77] open: /home/pi/FedML-Server/executor/wandb/offline-run-20220215_140749-47omhzug/run-47omhzug.wandb
+2022-02-15 14:07:51,497 DEBUG   HandlerThread:13113 [meta.py:__init__():36] meta init
+2022-02-15 14:07:51,498 DEBUG   HandlerThread:13113 [meta.py:__init__():50] meta init done
+2022-02-15 14:07:51,498 DEBUG   HandlerThread:13113 [meta.py:probe():210] probe
+2022-02-15 14:07:51,501 DEBUG   HandlerThread:13113 [meta.py:_setup_git():200] setup git
+2022-02-15 14:07:51,530 DEBUG   HandlerThread:13113 [meta.py:_setup_git():207] setup git done
+2022-02-15 14:07:51,531 DEBUG   HandlerThread:13113 [meta.py:_save_pip():54] save pip
+2022-02-15 14:07:51,532 DEBUG   HandlerThread:13113 [meta.py:_save_pip():68] save pip done
+2022-02-15 14:07:51,532 DEBUG   HandlerThread:13113 [meta.py:probe():248] probe done
+2022-02-15 14:19:07,369 WARNING MainThread:13113 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-15 14:19:10,496 DEBUG   SenderThread:13113 [sender.py:send():235] send: exit
+2022-02-15 14:19:10,497 INFO    SenderThread:13113 [sender.py:send_exit():371] handling exit code: 0
+2022-02-15 14:19:10,498 DEBUG   HandlerThread:13113 [handler.py:handle_request():131] handle_request: poll_exit
+2022-02-15 14:19:10,498 INFO    SenderThread:13113 [sender.py:send_exit():373] handling runtime: 679
+2022-02-15 14:19:10,499 INFO    SenderThread:13113 [sender.py:_save_file():944] saving file wandb-summary.json with policy end
+2022-02-15 14:19:10,500 INFO    SenderThread:13113 [sender.py:send_exit():379] send defer
+2022-02-15 14:19:10,500 DEBUG   SenderThread:13113 [sender.py:send_request():249] send_request: poll_exit
+2022-02-15 14:19:10,502 DEBUG   HandlerThread:13113 [handler.py:handle_request():131] handle_request: defer
+2022-02-15 14:19:10,503 INFO    HandlerThread:13113 [handler.py:handle_request_defer():154] handle defer: 0
+2022-02-15 14:19:10,505 DEBUG   SenderThread:13113 [sender.py:send_request():249] send_request: defer
+2022-02-15 14:19:10,505 INFO    SenderThread:13113 [sender.py:send_request_defer():388] handle sender defer: 0
+2022-02-15 14:19:10,505 INFO    SenderThread:13113 [sender.py:transition_state():392] send defer: 1
+2022-02-15 14:19:10,507 DEBUG   HandlerThread:13113 [handler.py:handle_request():131] handle_request: defer
+2022-02-15 14:19:10,507 INFO    HandlerThread:13113 [handler.py:handle_request_defer():154] handle defer: 1
+2022-02-15 14:19:10,512 WARNING MainThread:13113 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-02-15 14:19:10,512 ERROR   MainThread:13113 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-02-15 14:19:10,593 INFO    HandlerThread:13113 [handler.py:finish():739] shutting down handler
+2022-02-15 14:19:10,594 DEBUG   SenderThread:13113 [sender.py:send_request():249] send_request: defer
+2022-02-15 14:19:10,594 INFO    SenderThread:13113 [sender.py:send_request_defer():388] handle sender defer: 1
+2022-02-15 14:19:10,594 INFO    SenderThread:13113 [sender.py:transition_state():392] send defer: 2
+2022-02-15 14:19:10,594 INFO    SenderThread:13113 [sender.py:finish():1075] shutting down sender
+2022-02-15 14:19:11,496 INFO    WriterThread:13113 [datastore.py:close():281] close: /home/pi/FedML-Server/executor/wandb/offline-run-20220215_140749-47omhzug/run-47omhzug.wandb
+2022-02-15 14:19:11,499 INFO    MainThread:13113 [internal.py:handle_exit():79] Internal process exited

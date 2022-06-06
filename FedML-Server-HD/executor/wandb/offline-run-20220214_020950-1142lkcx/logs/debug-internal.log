@@ -1,0 +1,11 @@
+2022-02-14 02:09:51,613 INFO    MainThread:6959 [internal.py:wandb_internal():92] W&B internal server running at pid: 6959, started at: 2022-02-14 02:09:51.613117
+2022-02-14 02:09:51,622 DEBUG   HandlerThread:6959 [handler.py:handle_request():131] handle_request: run_start
+2022-02-14 02:09:51,623 INFO    WriterThread:6959 [datastore.py:open_for_write():77] open: /home/pi/FedML-Server/executor/wandb/offline-run-20220214_020950-1142lkcx/run-1142lkcx.wandb
+2022-02-14 02:09:51,628 DEBUG   HandlerThread:6959 [meta.py:__init__():36] meta init
+2022-02-14 02:09:51,629 DEBUG   HandlerThread:6959 [meta.py:__init__():50] meta init done
+2022-02-14 02:09:51,629 DEBUG   HandlerThread:6959 [meta.py:probe():210] probe
+2022-02-14 02:09:51,632 DEBUG   HandlerThread:6959 [meta.py:_setup_git():200] setup git
+2022-02-14 02:09:51,662 DEBUG   HandlerThread:6959 [meta.py:_setup_git():207] setup git done
+2022-02-14 02:09:51,662 DEBUG   HandlerThread:6959 [meta.py:_save_pip():54] save pip
+2022-02-14 02:09:51,663 DEBUG   HandlerThread:6959 [meta.py:_save_pip():68] save pip done
+2022-02-14 02:09:51,663 DEBUG   HandlerThread:6959 [meta.py:probe():248] probe done

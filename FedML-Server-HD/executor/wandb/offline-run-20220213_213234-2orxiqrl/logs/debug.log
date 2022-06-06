@@ -1,0 +1,35 @@
+2022-02-13 21:32:34,877 INFO    MainThread:12319 [wandb_setup.py:_flush():75] Loading settings from /home/pi/.config/wandb/settings
+2022-02-13 21:32:34,877 INFO    MainThread:12319 [wandb_setup.py:_flush():75] Loading settings from /home/pi/FedML-Server/executor/wandb/settings
+2022-02-13 21:32:34,877 INFO    MainThread:12319 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-13 21:32:34,878 INFO    MainThread:12319 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'executor/app_nn.py', 'program': 'app_nn.py'}
+2022-02-13 21:32:34,878 INFO    MainThread:12319 [wandb_init.py:_log_setup():386] Logging user logs to /home/pi/FedML-Server/executor/wandb/offline-run-20220213_213234-2orxiqrl/logs/debug.log
+2022-02-13 21:32:34,878 INFO    MainThread:12319 [wandb_init.py:_log_setup():387] Logging internal logs to /home/pi/FedML-Server/executor/wandb/offline-run-20220213_213234-2orxiqrl/logs/debug-internal.log
+2022-02-13 21:32:34,879 INFO    MainThread:12319 [wandb_init.py:init():420] calling init triggers
+2022-02-13 21:32:34,879 INFO    MainThread:12319 [wandb_init.py:init():427] wandb.init called with sweep_config: {}
+config: {'model': 'nn', 'dataset': 'fashionmnist', 'result_dir': './result', 'partition_method': 'iid', 'partition_alpha': 0.5, 'partition_secondary': False, 'partition_label': 'uniform', 'client_num_in_total': 6, 'client_num_per_round': 6, 'data_size_per_client': 600, 'batch_size': 100, 'client_optimizer': 'sgd', 'lr': 0.01, 'momentum': 0.9, 'wd': 0.001, 'epochs': 5, 'comm_round': 20, 'is_mobile': 1, 'frequency_of_the_test': 1, 'gpu_server_num': 1, 'gpu_num_per_server': 4, 'ci': 0, 'is_preprocessed': True, 'grpc_ipconfig_path': '../executor/grpc_ipconfig.csv', 'backend': 'MQTT', 'mqtt_host': '10.0.137.51', 'mqtt_port': 61613, 'trial': 0}
+2022-02-13 21:32:34,880 INFO    MainThread:12319 [wandb_init.py:init():471] starting backend
+2022-02-13 21:32:34,880 INFO    MainThread:12319 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-13 21:32:34,899 INFO    MainThread:12319 [backend.py:ensure_launched():219] starting backend process...
+2022-02-13 21:32:34,911 INFO    MainThread:12319 [backend.py:ensure_launched():225] started backend process with pid: 12355
+2022-02-13 21:32:34,915 INFO    MainThread:12319 [wandb_init.py:init():480] backend started and connected
+2022-02-13 21:32:34,941 INFO    MainThread:12319 [wandb_init.py:init():550] updated telemetry
+2022-02-13 21:32:34,978 INFO    MainThread:12319 [wandb_init.py:init():624] starting run threads in backend
+2022-02-13 21:32:35,159 WARNING MainThread:12319 [wandb_init.py:init():972] interrupted
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 951, in init
+    run = wi.init()
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 629, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 221, in communicate_run_start
+    result = self._communicate_run_start(run_start)
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 423, in _communicate_run_start
+    result = self._communicate(rec)
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 213, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/pi/.local/lib/python3.7/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

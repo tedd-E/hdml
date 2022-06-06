@@ -1,0 +1,138 @@
+============================Starting loading mnist==========================#
+=================================mnist loaded===============================#
+Connection returned with result code:0
+ * Serving Flask app "app_nn" (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.
+0
+   Use a production WSGI server instead.
+ * Debug mode: off
+onSubscribe :1
+transform_tensor_to_list
+json string size = 9612244
+transform_tensor_to_list
+json string size = 9612748
+transform_tensor_to_list
+json string size = 9612675
+transform_tensor_to_list
+json string size = 9611801
+transform_tensor_to_list
+json string size = 9611571
+transform_tensor_to_list
+json string size = 9611479
+transform_tensor_to_list
+json string size = 9611520
+transform_tensor_to_list
+json string size = 9611916
+transform_tensor_to_list
+json string size = 9611003
+INFO:root:*********partition data***************
+INFO:root:Label distribution on client:[60, 60, 60, 60, 60, 60, 60, 60, 60, 60]
+INFO:root:traindata_cls_counts = {0: {0: 60, 1: 60, 2: 60, 3: 60, 4: 60, 5: 60, 6: 60, 7: 60, 8: 60, 9: 60}}
+INFO:root:train_dl_global number = 600
+INFO:root:test_dl_global number = 100
+INFO:root:client_idx = 0, local_sample_number = 600
+INFO:root:client_idx = 0, batch_num_train_local = 6, batch_num_test_local = 100
+INFO:root:create_model. model_name = nn, output_dim = 10
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://10.0.137.51:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:10.0.137.54 - - [14/Feb/2022 05:58:04] "POST /api/register?device_id=3 HTTP/1.1" 200 -
+INFO:root:add_model. index = 0
+INFO:root:round=0 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 0
+INFO:root:{'training_acc': 0.8433333333333334, 'training_loss': 0.49092217286427814}
+INFO:root:{'test_acc': 0.8157, 'test_loss': 0.574497662037611}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=1 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 1
+INFO:root:{'training_acc': 0.9583333333333334, 'training_loss': 0.17307038232684135}
+INFO:root:{'test_acc': 0.899, 'test_loss': 0.3399026382341981}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=2 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 2
+INFO:root:{'training_acc': 0.9783333333333334, 'training_loss': 0.07250914846857388}
+INFO:root:{'test_acc': 0.9119, 'test_loss': 0.31201937329024076}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=3 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 3
+INFO:root:{'training_acc': 0.9966666666666667, 'training_loss': 0.027992768834034603}
+INFO:root:{'test_acc': 0.9201, 'test_loss': 0.30201041855965743}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=4 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 4
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.014435748104006052}
+INFO:root:{'test_acc': 0.9229, 'test_loss': 0.3084122388961259}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=5 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 5
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.009408101594696442}
+INFO:root:{'test_acc': 0.9244, 'test_loss': 0.31593149559397715}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=6 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 6
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.00718388690923651}
+INFO:root:{'test_acc': 0.9238, 'test_loss': 0.3272565543395467}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=7 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 7
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.005218648739779989}
+INFO:root:{'test_acc': 0.9252, 'test_loss': 0.33279374819190705}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=8 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 8
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.0042001582914963365}
+INFO:root:{'test_acc': 0.9262, 'test_loss': 0.3389386024535634}
+INFO:root:send_message_sync_model_to_client. receive_id = 1
+INFO:root:topic = fedml0_1
+INFO:root:sent
+INFO:root:add_model. index = 0
+INFO:root:round=9 b_all_received=True
+INFO:root:len of self.model_dict[idx] = 1
+INFO:root:aggregate time cost: 0
+INFO:root:################test_on_server_for_all_clients : 9
+INFO:root:{'training_acc': 1.0, 'training_loss': 0.003496676489400367}
+INFO:root:{'test_acc': 0.9267, 'test_loss': 0.3444272992995684}
+INFO:root:__finish server

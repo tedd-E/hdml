@@ -1,0 +1,18 @@
+2022-02-14 13:10:51,418 INFO    MainThread:4034 [internal.py:wandb_internal():92] W&B internal server running at pid: 4034, started at: 2022-02-14 13:10:51.417444
+2022-02-14 13:10:51,426 DEBUG   HandlerThread:4034 [handler.py:handle_request():131] handle_request: run_start
+2022-02-14 13:10:51,426 INFO    WriterThread:4034 [datastore.py:open_for_write():77] open: /home/pi/FedML-Server/executor/wandb/offline-run-20220214_131049-137momam/run-137momam.wandb
+2022-02-14 13:10:51,433 DEBUG   HandlerThread:4034 [meta.py:__init__():36] meta init
+2022-02-14 13:10:51,433 DEBUG   HandlerThread:4034 [meta.py:__init__():50] meta init done
+2022-02-14 13:10:51,433 DEBUG   HandlerThread:4034 [meta.py:probe():210] probe
+2022-02-14 13:10:51,436 DEBUG   HandlerThread:4034 [meta.py:_setup_git():200] setup git
+2022-02-14 13:10:51,466 DEBUG   HandlerThread:4034 [meta.py:_setup_git():207] setup git done
+2022-02-14 13:10:51,466 DEBUG   HandlerThread:4034 [meta.py:_save_pip():54] save pip
+2022-02-14 13:10:51,467 DEBUG   HandlerThread:4034 [meta.py:_save_pip():68] save pip done
+2022-02-14 13:10:51,468 DEBUG   HandlerThread:4034 [meta.py:probe():248] probe done
+2022-02-14 13:14:24,429 WARNING MainThread:4034 [internal.py:wandb_internal():152] Internal process interrupt: 1
+2022-02-14 13:14:24,473 WARNING MainThread:4034 [internal.py:wandb_internal():152] Internal process interrupt: 2
+2022-02-14 13:14:24,474 ERROR   MainThread:4034 [internal.py:wandb_internal():155] Internal process interrupted.
+2022-02-14 13:14:24,501 INFO    SenderThread:4034 [sender.py:finish():1075] shutting down sender
+2022-02-14 13:14:25,196 INFO    WriterThread:4034 [datastore.py:close():281] close: /home/pi/FedML-Server/executor/wandb/offline-run-20220214_131049-137momam/run-137momam.wandb
+2022-02-14 13:14:25,200 INFO    HandlerThread:4034 [handler.py:finish():739] shutting down handler
+2022-02-14 13:14:25,201 INFO    MainThread:4034 [internal.py:handle_exit():79] Internal process exited

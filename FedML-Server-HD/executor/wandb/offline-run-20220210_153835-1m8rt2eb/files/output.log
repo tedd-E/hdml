@@ -1,0 +1,31 @@
+
+============================Starting loading cifar10==========================#
+INFO:root:*********partition data***************
+Traceback (most recent call last):
+  File "app_nn.py", line 323, in <module>
+    dataset = load_data(args, args.dataset)
+  File "app_nn.py", line 248, in load_data
+    args.data_size_per_client)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/load_data.py", line 231, in load_partition_data
+    data_size_per_client)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/load_data.py", line 163, in partition_data
+    X_train, y_train, X_test, y_test = load_cifar10_data(datadir)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/cifar10/data_loader.py", line 94, in load_cifar10_data
+    cifar10_train_ds = CIFAR10_truncated(datadir, train=True, download=True, transform=train_transform)
+  File "/home/pi/FedML-Server/FedML/fedml_api/data_preprocessing/cifar10/datasets.py", line 51, in __init__
+    self.target_transform, self.download)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/cifar.py", line 64, in __init__
+    self.download()
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/cifar.py", line 148, in download
+    download_and_extract_archive(self.url, self.root, filename=self.filename, md5=self.tgz_md5)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/utils.py", line 264, in download_and_extract_archive
+    download_url(url, download_root, filename, md5)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/utils.py", line 75, in download_url
+    makedir_exist_ok(root)
+  File "/usr/local/lib/python3.7/dist-packages/torchvision/datasets/utils.py", line 51, in makedir_exist_ok
+    os.makedirs(dirpath)
+  File "/usr/lib/python3.7/os.py", line 211, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/usr/lib/python3.7/os.py", line 221, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: './../../../data'

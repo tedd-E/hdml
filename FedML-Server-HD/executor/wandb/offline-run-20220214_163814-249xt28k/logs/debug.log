@@ -1,0 +1,23 @@
+2022-02-14 16:38:14,050 INFO    MainThread:8656 [wandb_setup.py:_flush():75] Loading settings from /home/pi/.config/wandb/settings
+2022-02-14 16:38:14,051 INFO    MainThread:8656 [wandb_setup.py:_flush():75] Loading settings from /home/pi/FedML-Server/executor/wandb/settings
+2022-02-14 16:38:14,051 INFO    MainThread:8656 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-02-14 16:38:14,051 INFO    MainThread:8656 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'executor/app_nn.py', 'program': 'app_nn.py'}
+2022-02-14 16:38:14,051 INFO    MainThread:8656 [wandb_init.py:_log_setup():386] Logging user logs to /home/pi/FedML-Server/executor/wandb/offline-run-20220214_163814-249xt28k/logs/debug.log
+2022-02-14 16:38:14,051 INFO    MainThread:8656 [wandb_init.py:_log_setup():387] Logging internal logs to /home/pi/FedML-Server/executor/wandb/offline-run-20220214_163814-249xt28k/logs/debug-internal.log
+2022-02-14 16:38:14,052 INFO    MainThread:8656 [wandb_init.py:init():420] calling init triggers
+2022-02-14 16:38:14,052 INFO    MainThread:8656 [wandb_init.py:init():427] wandb.init called with sweep_config: {}
+config: {'model': 'nn', 'dataset': 'mnist', 'result_dir': './result', 'partition_method': 'iid', 'partition_alpha': 0.5, 'partition_secondary': False, 'partition_label': 'uniform', 'client_num_in_total': 1, 'client_num_per_round': 1, 'data_size_per_client': 600, 'batch_size': 100, 'client_optimizer': 'sgd', 'lr': 0.01, 'momentum': 0.9, 'wd': 0.001, 'epochs': 5, 'comm_round': 10, 'is_mobile': 1, 'frequency_of_the_test': 1, 'gpu_server_num': 1, 'gpu_num_per_server': 4, 'ci': 0, 'is_preprocessed': True, 'grpc_ipconfig_path': '../executor/grpc_ipconfig.csv', 'backend': 'MQTT', 'mqtt_host': '10.0.137.51', 'mqtt_port': 61613, 'trial': 0}
+2022-02-14 16:38:14,053 INFO    MainThread:8656 [wandb_init.py:init():471] starting backend
+2022-02-14 16:38:14,053 INFO    MainThread:8656 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-02-14 16:38:14,073 INFO    MainThread:8656 [backend.py:ensure_launched():219] starting backend process...
+2022-02-14 16:38:14,085 INFO    MainThread:8656 [backend.py:ensure_launched():225] started backend process with pid: 8675
+2022-02-14 16:38:14,089 INFO    MainThread:8656 [wandb_init.py:init():480] backend started and connected
+2022-02-14 16:38:14,114 INFO    MainThread:8656 [wandb_init.py:init():550] updated telemetry
+2022-02-14 16:38:14,152 INFO    MainThread:8656 [wandb_init.py:init():624] starting run threads in backend
+2022-02-14 16:38:15,708 INFO    MainThread:8656 [wandb_run.py:_console_start():1827] atexit reg
+2022-02-14 16:38:15,710 INFO    MainThread:8656 [wandb_run.py:_redirect():1701] redirect: SettingsConsole.REDIRECT
+2022-02-14 16:38:15,710 INFO    MainThread:8656 [wandb_run.py:_redirect():1706] Redirecting console.
+2022-02-14 16:38:15,714 INFO    MainThread:8656 [wandb_run.py:_redirect():1762] Redirects installed.
+2022-02-14 16:38:15,714 INFO    MainThread:8656 [wandb_init.py:init():651] run started, returning control to user process
+2022-02-14 16:48:14,580 INFO    MainThread:8656 [wandb_run.py:_atexit_cleanup():1797] got exitcode: 0
+2022-02-14 16:48:14,583 INFO    MainThread:8656 [wandb_run.py:_restore():1769] restore
