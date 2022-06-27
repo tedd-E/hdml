@@ -1,0 +1,57 @@
+Round:  0
+	=> client_id: Server accuracy: 0.7320000529289246
+Time:  360.15622568130493
+Round:  1
+	=> client_id: Server accuracy: 0.6880000829696655
+Time:  707.4146118164062
+Round:  2
+	=> client_id: Server accuracy: 0.7260000109672546
+Time:  1058.8565809726715
+Round:  3
+	=> client_id: Server accuracy: 0.6179999709129333
+Time:  1412.4838650226593
+Round:  4
+	=> client_id: Server accuracy: 0.7260000109672546
+Time:  1766.9240493774414
+Round:  5
+	=> client_id: Server accuracy: 0.8240000009536743
+Time:  2125.4138073921204
+Round:  6
+	=> client_id: Server accuracy: 0.8939999341964722
+Time:  2484.662744283676
+Round:  7
+	=> client_id: Server accuracy: 0.9019999504089355
+Time:  2844.1957671642303
+Round:  8
+	=> client_id: Server accuracy: 0.9039999842643738
+Time:  3201.3033010959625
+Round:  9
+	=> client_id: Server accuracy: 0.9120000004768372
+Time:  3557.1438913345337
+Round:  10
+	=> client_id: Server accuracy: 0.906000018119812
+Time:  3913.979347705841
+Round:  11
+	=> client_id: Server accuracy: 0.9160000085830688
+Time:  4270.881865024567
+Round:  12
+	=> client_id: Server accuracy: 0.9120000004768372
+Time:  4626.2328045368195
+Round:  13
+	=> client_id: Server accuracy: 0.9160000085830688
+Time:  4981.07936835289
+Round:  14
+	=> client_id: Server accuracy: 0.9160000085830688
+Time:  5334.144402742386
+Round:  15
+	=> client_id: Server accuracy: 0.9199999570846558
+Time:  5683.816189050674
+Round:  16
+	=> client_id: Server accuracy: 0.9180000424385071
+Time:  6040.697270154953
+Round:  17
+	=> client_id: Server accuracy: 0.9160000085830688
+Time:  6398.17343044281
+Round:  18
+	=> client_id: Server accuracy: 0.9160000085830688
+Time:  6761.38603925705
